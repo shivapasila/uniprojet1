@@ -1,0 +1,335 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+}
+.logo {
+  width: 200px;
+  height: 120px;
+}
+h2 {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #088176;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #088176;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid aqua;
+  border-radius: 3px;
+  height: 120px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar li {
+  list-style: none;
+  padding: 10px 20px;
+}
+.navbar li a {
+  text-decoration: none;
+  font-family: "arial";
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.navbar li a:hover,
+.navbar li a.active,
+#active {
+  color: aqua;
+  transition: all 0.3s;
+}
+.navbar li a.active::after {
+  text-decoration: underline;
+}
+i {
+  font-size: 40px;
+}
+.section-m1 {
+  padding: 30px 0;
+}
+#banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(https://img.freepik.com/free-photo/stylish-happy-girl-shopping-portrait-modern-woman-with-shop-bag-laughing-smiling-satisfied_1258-119361.jpg?w=826&t=st=1693311967~exp=1693312567~hmac=75c907b75333f20fbd0ee1ebf64c0bcc8c6926b35478e1cd05796e8e36dd4422);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+}
+#banner button {
+  background-color: #088176;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+#banner button a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+#banner button:hover {
+  background-color: aquamarine;
+  transition: 0.5sec ease;
+}
+#product1 {
+  text-align: center;
+}
+.section-m1 p {
+  color: #088178;
+  font-size: 24px;
+  font-weight: 400;
+}
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 15px 0px;
+  transition: 0.3s ease;
+}
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+}
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+#product1 .pro span {
+  color: #606063;
+  font-size: 12px;
+}
+#product1 .pro h5 {
+  padding-top: 7px;
+  color: 1a1a1a;
+  font-size: 14px;
+}
+#product1 .pro i {
+  padding-top: 10px;
+  font-size: 15px;
+  color: rgb(243, 181, 25);
+}
+.price {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #088178;
+}
+.add-to-cart {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  padding: 10px 10px 20px 10px;
+}
+footer {
+  background-color: #088178;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.social-icons {
+  margin-bottom: 2rem;
+  padding: 10px;
+}
+.icon {
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: #09ab9d;
+}
+.icons:hover {
+  transition: all 0.5sec rgb(8, 238, 215);
+}
+/*Css for Login */
+.login-box {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.form {
+  background-color: #088178;
+  padding: 20px 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+.form h2 {
+  color: white;
+}
+.input-box {
+  width: 250px;
+  border-bottom: 2px solid white;
+}
+.input-box label {
+  color: #606063;
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  position: relative;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -30px;
+}
+.input-box input {
+  width: 100%;
+  height: 30px;
+  left: 5px;
+  transform: translateY(100%);
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+  padding: 0 50px 0 5px;
+}
+.input-box .icon {
+  position: relative;
+  right: -200px;
+  top: 55px;
+  color: #fff;
+  line-height: 10px;
+  font-size: 10px;
+}
+.remember-forgot,
+#Remember {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #fff;
+}
+.remember-forgot input {
+  margin-right: 8px;
+}
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+  transition: all 0.5s;
+  font-weight: 800;
+}
+#login-button {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  color: #088178;
+  font-size: 1em;
+  font-weight: 800;
+  margin-top: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+#login-button:hover {
+  background-color: aqua;
+  color: #fff;
+  transition: 0.3s all;
+}
+.register-link {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px 0;
+}
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.register-link p a:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+/*Css for Contact */
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 300px;
+}
+h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #088176;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+textarea {
+  resize: vertical;
+}
+button {
+  padding: 10px 20px;
+  background-color: #088178;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: aquamarine;
+  color: black;
+  transition: 0.3s ease;
+}
