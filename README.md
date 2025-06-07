@@ -62,7 +62,7 @@ This repository is part of my learning journey in frontend development. It helpe
 
 ## 🔗 Connect with Me
 
-- [LinkedIn](www.linkedin.com/in/satyanarayana-pasila-262152127)
+- [LinkedIn](https://www.linkedin.com/in/satyanarayana-pasila-262152127)
 - 📧 satyapasila44@gmail.com
 
 ---
